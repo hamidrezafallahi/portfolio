@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+/* =========================================================
+   LIGHT (Default)
+========================================================= */
+:root {
+  --background-color: #ffffff;
+  --foreground-color: #09090b;
+
+  --primary-color: #111827;
+  --secondary-color: #4f46e5;
+  --highlight-color: #8b5cf6;
+  --neutral-color: #f8fafc;
+
+  --success-color: #22c55e;
+  --error-color: #ef4444;
+  --warning-color: #f59e0b;
+  --info-color: #3b82f6;
+
+  --glow-color: rgba(79, 70, 229, 0.18);
+}
+
+/* =========================================================
+   DARK
+========================================================= */
+[data-theme="dark"] {
+  --background-color: #09090b;
+  --foreground-color: #fafafa;
+
+  --primary-color: #6366f1;
+  --secondary-color: #8b5cf6;
+  --highlight-color: #c084fc;
+  --neutral-color: #18181b;
+
+  --success-color: #22c55e;
+  --error-color: #ef4444;
+  --warning-color: #f59e0b;
+  --info-color: #60a5fa;
+
+  --glow-color: rgba(99, 102, 241, 0.28);
+}
+
+/* =========================================================
+   CYBERPUNK
+========================================================= */
+[data-theme="cyberpunk"] {
+  --background-color: #08090f;
+  --foreground-color: #f4f4f5;
+
+  --primary-color: #00f5ff;
+  --secondary-color: #ff00c8;
+  --highlight-color: #ffe600;
+  --neutral-color: #11131b;
+
+  --success-color: #00ff88;
+  --error-color: #ff3b5c;
+  --warning-color: #ffb703;
+  --info-color: #38bdf8;
+
+  --glow-color: rgba(0, 245, 255, 0.35);
+}
+
+[data-theme="cyberpunk"] .cyber-glow {
+  box-shadow:
+    0 0 20px var(--primary-color),
+    0 0 40px var(--primary-color),
+    0 0 80px var(--secondary-color);
+}
+
+/* =========================================================
+   AURORA
+========================================================= */
+[data-theme="aurora"] {
+  --background-color: #f8fafc;
+  --foreground-color: #0f172a;
+
+  --primary-color: #00c9a7;
+  --secondary-color: #845ec2;
+  --highlight-color: #ff6f91;
+  --neutral-color: #eef2ff;
+
+  --success-color: #00c853;
+  --error-color: #ef5350;
+  --warning-color: #ffb300;
+  --info-color: #29b6f6;
+
+  --glow-color: rgba(0, 201, 167, 0.22);
+}
+
+/* =========================================================
+   GLOBALS
+========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+
+  transition:
+    background-color 300ms ease,
+    color 300ms ease;
+}
+
+/* =========================================================
+   UTILITIES
+========================================================= */
+
+.shadow-neu {
+  box-shadow:
+    6px 6px 12px rgba(0, 0, 0, 0.12),
+    -6px -6px 12px rgba(255, 255, 255, 0.8);
+}
+
+.shadow-inner-glow {
+  box-shadow:
+    inset 4px 4px 10px rgba(52, 211, 153, 0.3),
+    inset -4px -4px 10px rgba(166, 244, 197, 0.3);
+}
+
+.theme-glow {
+  box-shadow:
+    0 0 30px var(--glow-color),
+    0 0 60px var(--glow-color);
+}
+
+/* =========================================================
+   SIDEBAR VARIABLES
+========================================================= */
+
+@layer base {
+  :root {
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.hidden-show-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: color-mix(
+    in srgb,
+    var(--neutral-color) 80%,
+    transparent
+  );
+
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
