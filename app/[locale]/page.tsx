@@ -1,24 +1,29 @@
+import AboutSection from '@components/landing/aboutSection';
 import ContactSection from '@components/landing/contactSection';
-import ExperienceSection from '@components/landing/experienceSection';
+import ExperienceTimelineSection
+  from '@components/landing/experienceTimelineSection';
+import FeaturedProjectsSection
+  from '@components/landing/featuredProjectsSection';
 import HeroSection from '@components/landing/heroSection';
+import HighlightsSection from '@components/landing/highlightsSection';
 import OpenSourceSection from '@components/landing/openSourceSection';
-import ProjectsSection from '@components/landing/projectsSection';
 import TechStackSection from '@components/landing/techStackSection';
 
-export default function Home() {
+export default async function Page(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  // Await کردن params
+  const { params } = await props;
   return (
     <main className="w-full">
-      <HeroSection />
-
-      <TechStackSection />
-
-      <ExperienceSection />
-
-      <ProjectsSection />
-
-      <OpenSourceSection />
-
-      <ContactSection />
+      <HeroSection params={params}/>
+      <HighlightsSection params={params}/>
+      <AboutSection params={params}/>
+      <FeaturedProjectsSection params={params}/>
+      <ExperienceTimelineSection params={params}/>
+      <TechStackSection params={params}/>
+      <OpenSourceSection params={params}/>
+      <ContactSection params={params} />
     </main>
   );
 }

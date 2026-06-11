@@ -1,7 +1,123 @@
 {
-  "brand":{
-    "name":"برند",
-    "icon":"آیکون"
+  "Hero": {
+    "badge": "Frontend Engineer · Next.js · TypeScript",
+    "name": "حمیدرضا فلاحی",
+    "tagline": "ساخت رابط‌های کاربری سریع، مقیاس‌پذیر و SEO-friendly",
+    "description": "من روی توسعه فرانت‌اند با React، Next.js و TypeScript تمرکز دارم و تجربه ساخت پنل‌های مدیریتی، ERP، فروشگاه‌های آنلاین و اپلیکیشن‌های وب production-grade را دارم. هدف من ساخت محصولاتی است که هم از نظر تجربه کاربری قوی باشند و هم از نظر معماری، نگهداری و سئو قابل اتکا.",
+    "ctaProjects": "مشاهده پروژه‌ها",
+    "ctaContact": "شروع همکاری",
+    "ctaResume": "دانلود رزومه",
+    "imageAlt": "حمیدرضا فلاحی - Frontend Engineer"
+  },
+  "Highlights": {
+    "experience": {
+      "title": "3+",
+      "subtitle": "سال تجربه حرفه‌ای",
+      "description": "توسعه فرانت‌اند برای پروژه‌های واقعی و قابل استفاده در محیط production"
+    },
+    "projects": {
+      "title": "10+",
+      "subtitle": "پروژه واقعی",
+      "description": "از پنل‌های سازمانی و ERP تا فروشگاه آنلاین و وب‌اپلیکیشن‌های اختصاصی"
+    },
+    "technical": {
+      "title": "SEO + Performance",
+      "subtitle": "تمرکز فنی",
+      "description": "توسعه رابط کاربری سریع، بهینه و قابل نگهداری با معماری مدرن"
+    }
+  },
+  "About": {
+    "badge": "درباره من",
+    "title": "توسعه فرانت‌اند با تمرکز روی مقیاس‌پذیری، تجربه کاربری و کیفیت کد",
+    "paragraph1": "من به ساخت رابط‌های کاربری تمیز، سریع و قابل توسعه علاقه‌مندم؛ مخصوصاً در پروژه‌هایی که نیاز به معماری درست، کامپوننت‌های reusable و نگهداری بلندمدت دارند.",
+    "paragraph2": "تجربه من بیشتر روی توسعه پنل‌های مدیریت، سیستم‌های ERP، فروشگاه‌های آنلاین و اپلیکیشن‌های وب مبتنی بر Next.js و TypeScript بوده است. در کنار پیاده‌سازی UI، به performance، accessibility، SEO و تجربه توسعه‌دهنده هم توجه ویژه دارم.",
+    "paragraph3": "اگر دنبال توسعه‌دهنده‌ای هستی که فقط ظاهر را پیاده نکند و به ساختار، پایداری و کیفیت محصول هم فکر کند، خوشحال می‌شوم همکاری کنیم."
+  },"Projects": {
+    "badge": "پروژه‌های منتخب",
+    "title": "پروژه‌هایی که نشان می‌دهند چگونه فکر می‌کنم و می‌سازم",
+    "subtitle": "تمرکز من فقط روی پیاده‌سازی ظاهر نیست؛ روی ساخت فرانت‌اندهایی کار می‌کنم که از نظر ساختار، عملکرد و تجربه کاربری قابل اتکا باشند.",
+    "erp": {
+      "title": "Enterprise ERP Dashboard",
+      "description": "طراحی و توسعه رابط کاربری برای سیستم ERP شامل فرم‌های داینامیک، گردش‌کار، سطح دسترسی، گزارش‌گیری و معماری قابل توسعه.",
+      "tags": "Next.js, TypeScript, Redux Toolkit, Tailwind"
+    },
+    "ecommerce": {
+      "title": "SEO-Driven E-Commerce Platform",
+      "description": "پیاده‌سازی فروشگاه آنلاین با تمرکز روی عملکرد، SEO، تجربه خرید روان و اتصال به بک‌اند ASP.NET Core.",
+      "tags": "Next.js, SEO, PWA, ASP.NET Core"
+    },
+    "designSystem": {
+      "title": "Admin Panel Design System",
+      "description": "ساخت ساختار کامپوننت‌محور برای پنل مدیریت با هدف افزایش سرعت توسعه، یکپارچگی رابط کاربری و کاهش تکرار کد.",
+      "tags": "React, TypeScript, Design System, Reusable Components"
+    },
+    "viewDetails": "مشاهده جزئیات پروژه"
+  },"Experience": {
+    "badge": "تجربه",
+    "title": "تجربه من روی محصولاتی بوده که باید واقعاً کار کنند",
+    "erp": {
+      "period": "1402 - اکنون",
+      "role": "Frontend Developer",
+      "company": "ERP & Business Systems",
+      "description": "توسعه رابط کاربری پنل‌های سازمانی، فرم‌های پیچیده، مدیریت دسترسی و ماژول‌های عملیاتی با تمرکز بر معماری قابل نگهداری."
+    },
+    "ecommerce": {
+      "period": "1401 - 1402",
+      "role": "Frontend / Full Stack Developer",
+      "company": "E-Commerce Projects",
+      "description": "پیاده‌سازی فروشگاه‌های آنلاین و وب‌اپلیکیشن‌ها با Next.js و ASP.NET Core با توجه ویژه به SEO، عملکرد و ساختار تمیز پروژه."
+    },
+    "opensource": {
+      "period": "مستمر",
+      "role": "Open Source Contributor",
+      "company": "React Ecosystem",
+      "description": "توسعه و نگهداری ابزارها و کامپوننت‌های متن‌باز با تمرکز بر تجربه توسعه‌دهنده و کاربرد واقعی."
+    }
+  },
+    "TechStack": {
+    "badge": "تکنولوژی‌ها",
+    "title": "تکنولوژی‌ها و ابزارهایی که بیشتر با آن‌ها کار می‌کنم",
+    "frontend": {
+      "title": "Frontend Core",
+      "items": "React, Next.js, TypeScript, JavaScript"
+    },
+    "state": {
+      "title": "State & Data",
+      "items": "Redux Toolkit, RTK Query, React Query, REST API"
+    },
+    "ui": {
+      "title": "UI & Styling",
+      "items": "Tailwind CSS, Responsive Design, Reusable Components"
+    },
+    "architecture": {
+      "title": "Architecture",
+      "items": "Clean Architecture, DDD, Maintainable Structure"
+    },
+    "backend": {
+      "title": "Backend Collaboration",
+      "items": "ASP.NET Core, MediatR, Entity Framework"
+    },
+    "performance": {
+      "title": "Performance & Delivery",
+      "items": "SEO, PWA, Optimization, Firebase"
+    }
+  },
+  "OpenSource": {
+    "badge": "متن‌باز",
+    "title": "متن‌باز برای من فقط کدنویسی نیست؛ بخشی از هویت حرفه‌ای من است",
+    "project": {
+      "title": "react-persian-range-picker",
+      "description": "یک date range picker با پشتیبانی از تقویم جلالی و میلادی که با React و TypeScript توسعه داده شده و برای استفاده در پروژه‌های واقعی طراحی شده است.",
+      "tags": "React, TypeScript, Jalali Calendar, Open Source",
+      "button": "مشاهده در GitHub"
+    }
+  },
+  "Contact": {
+    "badge": "تماس",
+    "title": "اگر به یک فرانت‌اند قابل اتکا برای محصولت نیاز داری، با من در تماس باش",
+    "description": "برای همکاری در پروژه‌های فرانت‌اند، پنل‌های مدیریتی، ERP، فروشگاه‌های آنلاین یا بهبود ساختار و عملکرد محصولات وب می‌توانی از طریق لینک‌های زیر با من در ارتباط باشی.",
+    "email": "ارسال ایمیل",
+    "telegram": "پیام در تلگرام",
+    "linkedin": "LinkedIn"
   }
-    
 }

@@ -1,6 +1,124 @@
 {
-    "brand":{
-    "name":"brand",
-    "icon":"icon"
+  "Hero": {
+    "badge": "Frontend Engineer · Next.js · TypeScript",
+    "name": "Hamidreza Fallahi",
+    "tagline": "Building fast, scalable and SEO-friendly user interfaces",
+    "description": "I focus on frontend development with React, Next.js and TypeScript. I have experience building admin panels, ERP systems, online stores and production-grade web applications. My goal is to create products that are strong in user experience as well as reliable in architecture, maintainability and SEO.",
+    "ctaProjects": "View Projects",
+    "ctaContact": "Start Collaboration",
+    "ctaResume": "Download Resume",
+    "imageAlt": "Hamidreza Fallahi - Frontend Engineer"
+  },
+  "Highlights": {
+    "experience": {
+      "title": "3+",
+      "subtitle": "Years of Professional Experience",
+      "description": "Frontend development for real-world projects used in production environments"
+    },
+    "projects": {
+      "title": "10+",
+      "subtitle": "Real Projects",
+      "description": "From organizational panels and ERP to online stores and custom web applications"
+    },
+    "technical": {
+      "title": "SEO + Performance",
+      "subtitle": "Technical Focus",
+      "description": "Building fast, optimized and maintainable user interfaces with modern architecture"
+    }
+  },
+  "About": {
+    "badge": "About Me",
+    "title": "Frontend Development with focus on scalability, user experience and code quality",
+    "paragraph1": "I am passionate about building clean, fast and maintainable user interfaces; especially in projects that require proper architecture, reusable components and long-term maintainability.",
+    "paragraph2": "My experience is mainly in developing management panels, ERP systems, online stores and web applications based on Next.js and TypeScript. In addition to implementing UI, I pay special attention to performance, accessibility, SEO and developer experience.",
+    "paragraph3": "If you are looking for a developer who doesn't just implement the appearance but also thinks about structure, stability and product quality, I would be happy to collaborate."
+  },
+  "Projects": {
+    "badge": "Featured Projects",
+    "title": "Projects that show how I think and build",
+    "subtitle": "My focus is not just on implementing the UI; I work on building frontends that are reliable in structure, performance and user experience.",
+    "erp": {
+      "title": "Enterprise ERP Dashboard",
+      "description": "Design and development of user interface for ERP system including dynamic forms, workflow, access levels, reporting and extensible architecture.",
+      "tags": "Next.js, TypeScript, Redux Toolkit, Tailwind"
+    },
+    "ecommerce": {
+      "title": "SEO-Driven E-Commerce Platform",
+      "description": "Implementation of online store with focus on performance, SEO, smooth shopping experience and connection to ASP.NET Core backend.",
+      "tags": "Next.js, SEO, PWA, ASP.NET Core"
+    },
+    "designSystem": {
+      "title": "Admin Panel Design System",
+      "description": "Building component-based structure for management panel with the aim of increasing development speed, UI consistency and reducing code duplication.",
+      "tags": "React, TypeScript, Design System, Reusable Components"
+    },
+    "viewDetails": "View Project Details"
+  },"Experience": {
+    "badge": "Experience",
+    "title": "My experience has been on products that must actually work",
+    "erp": {
+      "period": "2023 - Present",
+      "role": "Frontend Developer",
+      "company": "ERP & Business Systems",
+      "description": "Developing user interfaces for organizational panels, complex forms, access management and operational modules with focus on maintainable architecture."
+    },
+    "ecommerce": {
+      "period": "2022 - 2023",
+      "role": "Frontend / Full Stack Developer",
+      "company": "E-Commerce Projects",
+      "description": "Implementation of online stores and web applications with Next.js and ASP.NET Core with special attention to SEO, performance and clean project structure."
+    },
+    "opensource": {
+      "period": "Ongoing",
+      "role": "Open Source Contributor",
+      "company": "React Ecosystem",
+      "description": "Development and maintenance of open source tools and components with focus on developer experience and real-world usage."
+    }
+  },
+  "TechStack": {
+    "badge": "Tech Stack",
+    "title": "Technologies and tools I work with the most",
+    "frontend": {
+      "title": "Frontend Core",
+      "items": "React, Next.js, TypeScript, JavaScript"
+    },
+    "state": {
+      "title": "State & Data",
+      "items": "Redux Toolkit, RTK Query, React Query, REST API"
+    },
+    "ui": {
+      "title": "UI & Styling",
+      "items": "Tailwind CSS, Responsive Design, Reusable Components"
+    },
+    "architecture": {
+      "title": "Architecture",
+      "items": "Clean Architecture, DDD, Maintainable Structure"
+    },
+    "backend": {
+      "title": "Backend Collaboration",
+      "items": "ASP.NET Core, MediatR, Entity Framework"
+    },
+    "performance": {
+      "title": "Performance & Delivery",
+      "items": "SEO, PWA, Optimization, Firebase"
+    }
+  },
+  "OpenSource": {
+    "badge": "Open Source",
+    "title": "Open source is not just coding for me; it is part of my professional identity",
+    "project": {
+      "title": "react-persian-range-picker",
+      "description": "A date range picker with support for Jalali and Gregorian calendars, developed with React and TypeScript, designed for real-world projects.",
+      "tags": "React, TypeScript, Jalali Calendar, Open Source",
+      "button": "View on GitHub"
+    }
+  },
+  "Contact": {
+    "badge": "Contact",
+    "title": "If you need a reliable frontend developer for your product, get in touch",
+    "description": "For collaboration on frontend projects, admin panels, ERP systems, online stores or improving the structure and performance of web products, you can reach me through the links below.",
+    "email": "Send Email",
+    "telegram": "Message on Telegram",
+    "linkedin": "LinkedIn"
   }
 }

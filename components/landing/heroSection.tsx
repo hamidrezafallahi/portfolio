@@ -1,120 +1,103 @@
+import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function HeroSection() {
+export default async function HeroSection(props: {
+  params: Promise<{locale: string }>;
+}) {
+    const { locale } = await props.params;
+  const t = await getTranslations({ locale:locale, namespace: 'Hero' });
   return (
-    <section id="home" className="relative py-24 lg:py-32 overflow-hidden">
-      {/* Grid Background */}
-      <div className="-z-10 absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-size-[64px_64px]" />
+    <section
+      id="home"
+      className="relative py-20 sm:py-24 lg:py-32 overflow-hidden"
+    >
+      {/* Background Grid */}
+      <div className="-z-10 absolute inset-0 bg-grid-theme opacity-40" />
 
-      {/* Glow */}
-      <div className="top-40 left-1/2 -z-10 absolute bg-[radial-gradient(circle,var(--glow-color)_0%,transparent_70%)] opacity-40 blur-3xl rounded-full w-150 h-150 -translate-x-1/2" />
+      {/* Glow Orb */}
+      <div className="top-24 left-1/2 -z-10 absolute bg-[radial-gradient(circle,var(--primary-color)_0%,transparent_70%)] opacity-25 blur-3xl rounded-full w-[18rem] sm:w-[24rem] lg:w-136 h-72 sm:h-96 lg:h-136 -translate-x-1/2" />
 
-      <div className="items-center gap-16 grid grid-cols-1 lg:grid-cols-2 mx-auto px-6 container">
-        {/* LEFT */}
-        <div className="lg:text-left text-center">
-          <span className="inline-block mb-6 px-4 py-2 text-sm rounded-full border border-(--primary-color)/30 backdrop-blur-md bg-[color-mix(in_srgb,var(--neutral-color)_70%,transparent)]">
-            مهندس فرانت‌اند | Frontend Engineer
+      <div className="items-center gap-14 lg:gap-16 grid grid-cols-1 lg:grid-cols-2 section-container">
+        <div className="text-center lg:text-right">
+          <span className="inline-flex bg-surface backdrop-blur-md px-4 py-2 border border-primary-theme/25 rounded-full text-muted text-sm">
+            {t('badge')}
           </span>
 
-          <h1 className="font-bold text-(--foreground-color) text-4xl md:text-6xl leading-tight">
-            حمیدرضا فلاحی
-            <span className="block mt-3 font-medium text-[color-mix(in_srgb,var(--foreground-color)_65%,transparent)] text-xl md:text-2xl">
-              Hamidreza Fallahi — Next.js & TypeScript Developer
+          <h1 className="mt-6 font-extrabold text-theme text-4xl sm:text-5xl lg:text-6xl leading-tight">
+            {t('name')}
+            <span className="block mt-3 font-medium text-muted text-lg sm:text-2xl">
+              {t('tagline')}
             </span>
           </h1>
 
-          <h2 className="mx-auto lg:mx-0 mt-6 max-w-xl font-medium text-[color-mix(in_srgb,var(--foreground-color)_85%,transparent)] text-xl md:text-2xl">
-            طراحی و توسعه سیستم‌های ERP، فروشگاه‌های آنلاین و اپلیکیشن‌های وب
-            مقیاس‌پذیر با معماری مدرن
-            <br />
-            <span className="font-normal text-[color-mix(in_srgb,var(--foreground-color)_65%,transparent)] text-base">
-              Building scalable ERP systems, e‑commerce platforms and modern web
-              applications with clean architecture.
-            </span>
-          </h2>
-
-          <p className="mx-auto lg:mx-0 mt-6 max-w-xl text-[color-mix(in_srgb,var(--foreground-color)_70%,transparent)]">
-            تمرکز من روی ساخت رابط‌های کاربری سریع، قابل نگهداری و بهینه برای
-            SEO است.
-            <br />I focus on performance-driven, maintainable, and SEO‑optimized
-            user interfaces.
+          <p className="mx-auto lg:mx-0 mt-6 max-w-2xl text-muted text-sm sm:text-base leading-8">
+            {t('description')}
           </p>
 
-          {/* Stats */}
-          <div className="flex justify-center lg:justify-start gap-8 mt-8 text-sm">
-            <div>
-              <p className="font-bold text-(--primary-color) text-lg">3+</p>
-              <p className="text-[color-mix(in_srgb,var(--foreground-color)_70%,transparent)]">
-                سال تجربه | Years Experience
-              </p>
-            </div>
-
-            <div>
-              <p className="font-bold text-(--primary-color) text-lg">10+</p>
-              <p className="text-[color-mix(in_srgb,var(--foreground-color)_70%,transparent)]">
-                پروژه واقعی | Projects
-              </p>
-            </div>
-
-            <div>
-              <p className="font-bold text-(--primary-color) text-lg">
-                Open Source
-              </p>
-              <p className="text-[color-mix(in_srgb,var(--foreground-color)_70%,transparent)]">
-                Contributor
-              </p>
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-10">
+          <div className="sm:flex sm:flex-wrap sm:justify-center lg:justify-start gap-4 grid grid-cols-2 mt-8">
             <Link
               href="#projects"
-              className="px-6 py-3 rounded-xl text-white bg-(--primary-color) hover:scale-[1.03] active:scale-95 transition"
+              className="px-8 py-3.5 text-base theme-button-primary"
             >
-              مشاهده پروژه‌ها | View Projects
+              {t('ctaProjects')}
+            </Link>
+
+            <Link
+              href="#contact"
+              className="px-8 py-3.5 text-base theme-button-secondary"
+            >
+              {t('ctaContact')}
             </Link>
 
             <Link
               href="/documents/hamidreza-fallahi-resume-1405-01.pdf"
-              className="px-6 py-3 border border-(--primary-color) rounded-xl hover:bg-(--primary-color) hover:text-white transition"
+              target="_blank"
+              className="flex justify-center items-center gap-2 col-span-2 sm:col-span-1 hover:bg-primary-theme px-8 py-3.5 hover:text-white text-base theme-button-secondary"
             >
-              دانلود رزومه | Download Resume
+              {t('ctaResume')}
             </Link>
           </div>
 
-          {/* Social */}
-          <div className="flex justify-center lg:justify-start gap-6 mt-8 text-[color-mix(in_srgb,var(--foreground-color)_70%,transparent)] text-sm">
-            <a href="https://github.com/hamidrezafallahi" target="_blank">
+          <div className="flex flex-wrap justify-center lg:justify-start items-center gap-x-8 gap-y-3 mt-10 text-muted text-sm">
+            <a
+              href="https://github.com/hamidrezafallahi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-highlight-theme transition theme-link"
+            >
               GitHub
             </a>
-
             <a
               href="https://www.linkedin.com/in/hamidreza-falahi"
               target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-highlight-theme transition theme-link"
             >
               LinkedIn
             </a>
-
-            <a href="https://t.me/hamidrezafalahi" target="_blank">
+            <a
+              href="https://t.me/hamidrezafalahi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-highlight-theme transition theme-link"
+            >
               Telegram
             </a>
           </div>
         </div>
 
-        {/* RIGHT */}
         <div className="relative flex justify-center">
-          <div className="absolute bg-[radial-gradient(circle,var(--primary-color)_0%,transparent_70%)] opacity-40 blur-2xl rounded-full w-80 h-80" />
+          <div className="absolute bg-[radial-gradient(circle,var(--primary-color)_0%,transparent_70%)] opacity-30 blur-3xl rounded-full w-64 sm:w-80 h-64 sm:h-80 -translate-x-4" />
 
-          <div className="relative p-4 rounded-2xl border border-(--primary-color)/20 shadow-xl backdrop-blur-xl bg-[color-mix(in_srgb,var(--neutral-color)_60%,transparent)]">
+          <div className="shadow-xl backdrop-blur-xl p-4 border border-primary-theme/15 rounded-3xl theme-card">
             <Image
-              src="/images/cyberpunk.png"
-              alt="Hamidreza Fallahi Frontend Engineer"
-              width={300}
-              height={300}
+              src="/images/perfect tail.png"
+              alt={t('imageAlt')}
+              width={420}
+              height={420}
               priority
-              className="rounded-xl w-auto object-cover"
+              className="rounded-2xl w-65 sm:w-[320px] lg:w-95 h-auto object-cover"
             />
           </div>
         </div>
