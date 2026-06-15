@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import AboutSection from '@components/landing/aboutSection';
 import ContactSection from '@components/landing/contactSection';
 import ExperienceTimelineSection
@@ -20,18 +18,7 @@ export default async function Page(props: {
     <main className="w-full">
       <HeroSection locale={locale} />
       <div className="relative">
-       <div className="top-0 -z-10 sticky blur-lg w-screen h-screen">
-  <Image
-    src="/images/bg.jpg"
-    alt="background"
-    fill
-    priority
-    className="object-cover"
-    // onLoad={() => console.log("BG image loaded")}
-    // onError={() => console.log("BG image FAILED to load")}
-  />
-</div>
-
+        {/* <ParallaxBackground /> */}
         <div className="z-10 relative">
           <HighlightsSection locale={locale} />
           <AboutSection locale={locale} />

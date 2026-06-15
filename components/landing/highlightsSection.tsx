@@ -35,7 +35,7 @@ className="relative overflow-hidden section-padding"
           className="items-stretch gap-6 grid md:grid-cols-3"
         >
           {highlights.map((item, index) => (
-            <ScrollReveal key={item.key} delay={index * 0.15}>
+            <ScrollReveal key={item.key} delay={index * 0.15} direction='left'>
               <article
                 className="hover:shadow-xl p-8 rounded-3xl h-full transition hover:-translate-y-1 theme-card"
               >

@@ -1,124 +1,130 @@
 {
   "Hero": {
-    "badge": "Frontend Engineer · Next.js · TypeScript",
-    "name": "Hamidreza Fallahi",
-    "tagline": "Building fast, scalable and SEO-friendly user interfaces",
-    "description": "I focus on frontend development with React, Next.js and TypeScript. I have experience building admin panels, ERP systems, online stores and production-grade web applications. My goal is to create products that are strong in user experience as well as reliable in architecture, maintainability and SEO.",
-    "ctaProjects": "View Projects",
-    "ctaContact": "Start Collaboration",
-    "ctaResume": "Download Resume",
-    "imageAlt": "Hamidreza Fallahi - Frontend Engineer"
-  },
+  "badge": "Frontend Engineer · Next.js · TypeScript · PWA",
+  "name": "Hamidreza Fallahi",
+  "tagline": "Architecting scalable, SEO-optimized frontends for complex systems",
+  "description": "I specialize in frontend engineering with React, Next.js and TypeScript, with deep experience building large-scale ERP systems, complex Master-Detail forms, and data-intensive admin panels. I leverage tools like Redux Toolkit, RTK Query, IndexedDB and PWA to deliver high-performance, maintainable and SEO-friendly applications.",
+  "ctaProjects": "View Projects",
+  "ctaContact": "Start Collaboration",
+  "ctaResume": "Download Resume",
+  "imageAlt": "Hamidreza Fallahi - Frontend Engineer"
+},
   "Highlights": {
-    "experience": {
-      "title": "3+",
-      "subtitle": "Years of Professional Experience",
-      "description": "Frontend development for real-world projects used in production environments"
-    },
-    "projects": {
-      "title": "10+",
-      "subtitle": "Real Projects",
-      "description": "From organizational panels and ERP to online stores and custom web applications"
-    },
-    "technical": {
-      "title": "SEO + Performance",
-      "subtitle": "Technical Focus",
-      "description": "Building fast, optimized and maintainable user interfaces with modern architecture"
-    }
+  "experience": {
+    "title": "5+",
+    "subtitle": "Years of Professional Experience",
+    "description": "Frontend engineering for production-grade systems including large-scale ERP and data-intensive admin panels"
   },
+  "projects": {
+    "title": "10+",
+    "subtitle": "Real-World Projects",
+    "description": "From complex ERP systems and organizational panels to online stores and PWA applications"
+  },
+  "technical": {
+    "title": "100%",
+    "subtitle": "Focus on SEO & Performance",
+    "description": "Delivering fast, maintainable and SEO-optimized interfaces with modern architecture and server-side rendering"
+  }
+}
+,
   "About": {
-    "badge": "About Me",
-    "title": "Frontend Development with focus on scalability, user experience and code quality",
-    "paragraph1": "I am passionate about building clean, fast and maintainable user interfaces; especially in projects that require proper architecture, reusable components and long-term maintainability.",
-    "paragraph2": "My experience is mainly in developing management panels, ERP systems, online stores and web applications based on Next.js and TypeScript. In addition to implementing UI, I pay special attention to performance, accessibility, SEO and developer experience.",
-    "paragraph3": "If you are looking for a developer who doesn't just implement the appearance but also thinks about structure, stability and product quality, I would be happy to collaborate."
-  },
+  "badge": "About Me",
+  "title": "Frontend Development with focus on scalability, user experience and code quality",
+  "paragraph1": "I specialize in building complex, data-driven interfaces — particularly ERP systems, organizational panels and applications with intricate Master-Detail forms, multi-level permissions and real-time data flows.",
+  "paragraph2": "My stack centers on Next.js, TypeScript, Redux Toolkit and RTK Query. I put serious focus on performance optimization, offline capabilities with IndexedDB, SEO via server-side rendering and long-term maintainability through clean architecture.",
+  "paragraph3": "If you need a frontend engineer who thinks beyond the UI layer — about data flow, state architecture and product stability — let's talk."
+},
   "Projects": {
-    "badge": "Featured Projects",
-    "title": "Projects that show how I think and build",
-    "subtitle": "My focus is not just on implementing the UI; I work on building frontends that are reliable in structure, performance and user experience.",
-    "erp": {
-      "title": "Enterprise ERP Dashboard",
-      "description": "Design and development of user interface for ERP system including dynamic forms, workflow, access levels, reporting and extensible architecture.",
-      "tags": "Next.js, TypeScript, Redux Toolkit, Tailwind"
-    },
-    "ecommerce": {
-      "title": "SEO-Driven E-Commerce Platform",
-      "description": "Implementation of online store with focus on performance, SEO, smooth shopping experience and connection to ASP.NET Core backend.",
-      "tags": "Next.js, SEO, PWA, ASP.NET Core"
-    },
-    "designSystem": {
-      "title": "Admin Panel Design System",
-      "description": "Building component-based structure for management panel with the aim of increasing development speed, UI consistency and reducing code duplication.",
-      "tags": "React, TypeScript, Design System, Reusable Components"
-    },
-    "viewDetails": "View Project Details"
-  },"Experience": {
-    "badge": "Experience",
-    "title": "My experience has been on products that must actually work",
-    "erp": {
-      "period": "2023 - Present",
-      "role": "Frontend Developer",
-      "company": "ERP & Business Systems",
-      "description": "Developing user interfaces for organizational panels, complex forms, access management and operational modules with focus on maintainable architecture."
-    },
-    "ecommerce": {
-      "period": "2022 - 2023",
-      "role": "Frontend / Full Stack Developer",
-      "company": "E-Commerce Projects",
-      "description": "Implementation of online stores and web applications with Next.js and ASP.NET Core with special attention to SEO, performance and clean project structure."
-    },
-    "opensource": {
-      "period": "Ongoing",
-      "role": "Open Source Contributor",
-      "company": "React Ecosystem",
-      "description": "Development and maintenance of open source tools and components with focus on developer experience and real-world usage."
-    }
+  "badge": "Featured Projects",
+  "title": "Projects that show how I think and build",
+  "subtitle": "From large-scale ERP systems to SEO-optimized storefronts — each project reflects decisions made around architecture, performance and maintainability.",
+  "erp": {
+    "title": "Enterprise ERP Dashboard",
+    "description": "Full-scale ERP frontend with complex Master-Detail forms, multi-level access control, dynamic workflows and offline support via IndexedDB. Built for high data volume and long-term maintainability.",
+    "tags": "Next.js, TypeScript, Redux Toolkit, RTK Query, IndexedDB, Ant Design"
   },
+  "ecommerce": {
+    "title": "SEO-Driven E-Commerce Platform",
+    "description": "Online store with server-side rendering for maximum SEO, PWA support for offline access and a fast, smooth shopping experience connected to an ASP.NET Core backend.",
+    "tags": "Next.js, TypeScript, PWA, SSR, SEO"
+  },
+  "designSystem": {
+    "title": "Admin Panel Design System",
+    "description": "Component-driven design system for a large admin panel built with Ant Design and Material UI — focused on consistency, reusability and faster feature development across teams.",
+    "tags": "React, TypeScript, Ant Design, Material UI, Reusable Components"
+  },
+  "viewDetails": "View Project Details"
+}
+,
+"Experience": {
+  "badge": "Experience",
+  "title": "My experience has been on products that must actually work",
+  "erp": {
+    "period": "2023 - Present",
+    "role": "Frontend Developer",
+    "company": "ERP & Business Systems",
+    "description": "Building large-scale ERP interfaces with complex Master-Detail forms, multi-level access control and dynamic operational modules. Leveraging Redux Toolkit, RTK Query and IndexedDB for performance, offline support and maintainable state architecture."
+  },
+  "ecommerce": {
+    "period": "2022 - 2023",
+    "role": "Frontend / Full Stack Developer",
+    "company": "E-Commerce Projects",
+    "description": "Developing online stores and web applications with Next.js and ASP.NET Core — with strong focus on SSR for SEO, PWA for offline access and clean project architecture."
+  },
+  "opensource": {
+    "period": "Ongoing",
+    "role": "Open Source Contributor",
+    "company": "React Ecosystem",
+    "description": "Building and maintaining reusable React components and frontend utilities — focused on developer experience, real-world reliability and clean API design."
+  }
+}
+,
   "TechStack": {
-    "badge": "Tech Stack",
-    "title": "Technologies and tools I work with the most",
-    "frontend": {
-      "title": "Frontend Core",
-      "items": "React, Next.js, TypeScript, JavaScript"
-    },
-    "state": {
-      "title": "State & Data",
-      "items": "Redux Toolkit, RTK Query, React Query, REST API"
-    },
-    "ui": {
-      "title": "UI & Styling",
-      "items": "Tailwind CSS, Responsive Design, Reusable Components"
-    },
-    "architecture": {
-      "title": "Architecture",
-      "items": "Clean Architecture, DDD, Maintainable Structure"
-    },
-    "backend": {
-      "title": "Backend Collaboration",
-      "items": "ASP.NET Core, MediatR, Entity Framework"
-    },
-    "performance": {
-      "title": "Performance & Delivery",
-      "items": "SEO, PWA, Optimization, Firebase"
-    }
+  "badge": "Tech Stack",
+  "title": "Technologies and tools I work with the most",
+  "frontend": {
+    "title": "Frontend Core",
+    "items": "React, Next.js, TypeScript, JavaScript"
   },
+  "state": {
+    "title": "State & Data",
+    "items": "Redux Toolkit, RTK Query, React Query, IndexedDB, async-mutex"
+  },
+  "ui": {
+    "title": "UI & Styling",
+    "items": "Ant Design, Material UI, Tailwind CSS, Responsive Design"
+  },
+  "architecture": {
+    "title": "Architecture & Patterns",
+    "items": "Clean Architecture, DDD, Master-Detail, SSR, Reusable Components"
+  },
+  "backend": {
+    "title": "Backend Collaboration",
+    "items": "ASP.NET Core, MediatR, Entity Framework, REST API"
+  },
+  "performance": {
+    "title": "Performance & Quality",
+    "items": "PWA, SEO, Firebase, Jest, Optimization"
+  }
+}
+,
   "OpenSource": {
     "badge": "Open Source",
     "title": "Open source is not just coding for me; it is part of my professional identity",
     "project": {
       "title": "react-persian-range-picker",
-      "description": "A date range picker with support for Jalali and Gregorian calendars, developed with React and TypeScript, designed for real-world projects.",
+      "description": "A lightweight, fully-typed date range picker supporting both Jalali and Gregorian calendars. Built with React and TypeScript — production-ready and actively used in real enterprise projects.",
       "tags": "React, TypeScript, Jalali Calendar, Open Source",
       "button": "View on GitHub"
     }
   },
   "Contact": {
-    "badge": "Contact",
-    "title": "If you need a reliable frontend developer for your product, get in touch",
-    "description": "For collaboration on frontend projects, admin panels, ERP systems, online stores or improving the structure and performance of web products, you can reach me through the links below.",
-    "email": "Send Email",
-    "telegram": "Message on Telegram",
-    "linkedin": "LinkedIn"
-  }
+  "badge": "Let's Work Together",
+  "title": "Looking for a Frontend Engineer Who Delivers Production-Ready Code?",
+  "description": "Available for frontend projects involving complex admin panels, ERP systems, data-driven dashboards, or performance optimization. Experienced with React, Next.js, and scalable state architecture.",
+  "email": "Send an Email",
+  "telegram": "Message on Telegram",
+  "linkedin": "Connect on LinkedIn"
+}
+
 }

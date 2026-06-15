@@ -35,16 +35,16 @@ export default async function ExperienceTimelineSection(props: {
 
         <div className="relative space-y-6 mt-12">
           {/* vertical line */}
-          <div className="top-0 bottom-0 left-[20px] absolute bg-primary-theme/20 w-px" />
+          <div className="top-0 bottom-0 left-5 absolute bg-primary-theme/20 w-px" />
 
           {experiences.map((item, index) => (
-            <ScrollReveal key={item.key} delay={index * 0.15}>
+            <ScrollReveal key={item.key} delay={index * 0.15} direction='right'>
               <article
                 className="relative gap-4 grid md:grid-cols-[180px_1fr] p-8 pl-12 rounded-3xl theme-card"
               >
                 {/* dot */}
                 <span
-                  className="top-10 left-[12px] absolute bg-primary-theme shadow-md rounded-full w-3 h-3"
+                  className="top-10 left-3 absolute bg-primary-theme shadow-md rounded-full w-3 h-3"
                 />
 
                 {/* period */}

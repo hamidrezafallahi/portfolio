@@ -66,7 +66,8 @@ export default async function OpenSourceSection(props: { locale: string }) {
 
                 <div className="mt-8">
                   <Link
-                    href="https://github.com/hamidrezafallahi"
+                    href="https://www.npmjs.com/package/react-persian-range-picker"
+                    aria-label="View react-persian-range-picker on npmjs"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex px-6 py-3 font-medium text-sm theme-button-secondary"
