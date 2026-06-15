@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 
 import { libraries } from '@/contents/libraries/data';
+import MediaGallery from '@components/ui/MediaGallery';
 import ScrollReveal from '@components/ui/ScrollReveal';
 
 function getLibrary(slug: string) {
@@ -50,20 +51,9 @@ leading-8
             </p>
           </ScrollReveal>
 
-          {library.video && (
+          {library.media && (
             <ScrollReveal delay={0.2}>
-              <div
-                className="
-mt-12
-theme-card
-rounded-3xl
-overflow-hidden
-"
-              >
-                <video controls className="w-full">
-                  <source src={library.video} />
-                </video>
-              </div>
+              <MediaGallery media={library.media} locale={locale} />
             </ScrollReveal>
           )}
 
