@@ -15,11 +15,11 @@
     "subtitle": "Years of Professional Experience",
     "description": "Frontend engineering for production-grade systems including large-scale ERP and data-intensive admin panels"
   },
-  "projects": {
-    "title": "10+",
-    "subtitle": "Real-World Projects",
-    "description": "From complex ERP systems and organizational panels to online stores and PWA applications"
-  },
+   "projects": {
+  "title": "10+",
+  "subtitle": "Real-World Projects",
+  "description": "From complex ERP systems to e-commerce platforms and PWA applications"
+   },
   "technical": {
     "title": "100%",
     "subtitle": "Focus on SEO & Performance",
@@ -27,6 +27,29 @@
   }
 }
 ,
+  "project": {
+  "arianErp": {
+    "title": "Enterprise ERP System",
+    "description": "An ERP system for managing organizational processes including finance, human resources, production, and logistics.",
+    "problem": "A large number of list pages, forms, documents, and custom pages with non-standard structures.",
+    "solution": "Implementation of dynamic components for forms, lists, and tables with a focus on scalability.",
+    "role": "Lead Developer responsible for system architecture and development of dynamic layers.",
+
+    "media": {
+      "dashboard": "ERP Dashboard",
+      "list": "ERP List",
+      "form": "ERP Form",
+      "custom": "Custom ERP Pages",
+      "layoutForm": "Layout, List & Form System",
+      "reportRange": "Report Range Selection",
+      "calendar": "Date Picker",
+      "roles": "Access Control Panel",
+      "uploader": "File Uploader",
+      "stimulsoftReport": "Report Builder",
+      "voucher": "Accounting Voucher"
+    }
+  }
+},
   "About": {
   "badge": "About Me",
   "title": "Frontend Development with focus on scalability, user experience and code quality",

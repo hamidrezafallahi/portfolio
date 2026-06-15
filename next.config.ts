@@ -7,11 +7,18 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
- 
+
   reactStrictMode: false,
   output: 'standalone',
   images: {
-    domains: [process.env.APP_URL || 'localhost'],
+    // domains: [process.env.APP_URL || 'localhost'],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "cdn.myportfolio.com",
+    //     pathname: "/projects/**"
+    //   }
+    // ],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     formats: ['image/webp'],

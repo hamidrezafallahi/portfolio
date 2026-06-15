@@ -1,87 +1,43 @@
-export type Bilingual = {
-  fa: string;
-  en: string;
-};
-
+ 
 
 export type MediaItem = {
   type: "image" | "video";
-
   src: string;
-
-  alt: Bilingual;
+  alt: string;
 };
 
 
 
 export type Project = {
-
   slug: string;
-
-
-  title: Bilingual;
-
-
-  description: Bilingual;
-
-
-  problem: Bilingual;
-
-
-  solution: Bilingual;
-
-
-  role: Bilingual;
-
-
+  title: string;
+  description: string;
+  problem: string;
+  solution: string;
+  role: string;
   stack: string[];
-
-
   metrics?: {
     performance?: string;
     users?: string;
   };
-
-
   links?: {
     demo?: string;
     github?: string;
   };
-
-
   media?: MediaItem[];
-
 };
 
 
 
 
 export type Library = {
-
-  slug:string;
-
-
-  name:Bilingual;
-
-
-  description:Bilingual;
-
-
-  npm?:string;
-
-
-  github?:string;
-
-
-  features:Bilingual[];
-
-
-  usageExample:Bilingual;
-
-
-  tech:string[];
-
-
-  media?:MediaItem[];
-
+  slug: string;
+  name: string;
+  description: string;
+  npm?: string;
+  github?: string;
+  features: string[];
+  usageExample: string;
+  tech: string[];
+  media?: MediaItem[];
 };

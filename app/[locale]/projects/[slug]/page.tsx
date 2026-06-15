@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 import { projects } from '@/contents/projects/data';
@@ -17,13 +18,12 @@ export default async function ProjectPage({
   }>;
 }) {
   const { slug, locale } = await params;
-
+  const t = await getTranslations({locale,namespace:"project"});
   const project = getProject(slug);
-
   if (!project) {
     notFound();
   }
-
+console.log(project,typeof project.title,t("title"))
   return (
     <main className="w-full">
       <section className="relative overflow-hidden section-padding">
@@ -37,7 +37,7 @@ text-4xl
 md:text-6xl
 "
             >
-              {project.title[locale]}
+              {t(project.title)}
             </h1>
 
             <p
@@ -49,7 +49,7 @@ text-lg
 leading-8
 "
             >
-              {project.description[locale]}
+              {t(project.description)}
             </p>
           </ScrollReveal>
 
@@ -63,10 +63,7 @@ theme-card
 rounded-3xl
 "
               >
-                <MediaGallery
- media={project.media}
- locale={locale}
-/>
+                <MediaGallery media={project.media} locale={locale} />
               </div>
             </ScrollReveal>
           )}
@@ -77,7 +74,7 @@ rounded-3xl
                 <h2 className="font-bold text-theme text-2xl">Problem</h2>
 
                 <p className="mt-4 text-muted leading-8">
-                  {project.problem[locale]}
+                  {t(project.problem)}
                 </p>
               </div>
             </ScrollReveal>
@@ -87,7 +84,7 @@ rounded-3xl
                 <h2 className="font-bold text-theme text-2xl">Solution</h2>
 
                 <p className="mt-4 text-muted leading-8">
-                  {project.solution[locale]}
+                  {t(project.solution)}
                 </p>
               </div>
             </ScrollReveal>

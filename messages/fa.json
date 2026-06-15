@@ -14,18 +14,41 @@
     "title": "5+",
     "subtitle": "سال تجربه حرفه‌ای",
     "description": "توسعه فرانت‌اند برای سیستم‌های production شامل ERP در مقیاس بزرگ و پنل‌های مدیریتی پیچیده"
+    
   },
-  "projects": {
-    "title": "10+",
-    "subtitle": "پروژه واقعی",
-    "description": "از سیستم‌های ERP پیچیده و پنل‌های سازمانی تا فروشگاه آنلاین و اپلیکیشن‌های PWA"
-  },
+   "projects": {
+      "title": "10+",
+      "subtitle": "پروژه واقعی",
+      "description": "از سیستم‌های ERP پیچیده تا فروشگاه‌های آنلاین و اپلیکیشن‌های PWA"},
   "technical": {
     "title": "100%",
     "subtitle": "تمرکز بر SEO و Performance",
     "description": "ساخت رابط کاربری سریع، قابل نگهداری و بهینه برای SEO با معماری مدرن و رندر سمت سرور"
   }
 },
+  "project": {
+      "arianErp": {
+        "title": "Enterprise ERP System",
+        "description": "سیستم ERP برای مدیریت فرآیندهای سازمانی شامل مالی، منابع انسانی، تولید و لجستیک.",
+        "problem": "تعداد زیاد صفحات لیست، فرم، سند و صفحات سفارشی با ساختارهای غیر استاندارد.",
+        "solution": "پیاده‌سازی کامپوننت‌های داینامیک برای فرم، لیست و جدول با هدف مقیاس‌پذیری.",
+        "role": "Lead Developer مسئول معماری و توسعه لایه‌های داینامیک سیستم.",
+
+        "media": {
+          "dashboard": "ERP Dashboard",
+          "list": "ERP List",
+          "form": "ERP Form",
+          "custom": "Custom ERP Pages",
+          "layoutForm": "Layout, List & Form System",
+          "reportRange": "Report Range Selection",
+          "calendar": "Date Picker",
+          "roles": "Access Control Panel",
+          "uploader": "File Uploader",
+          "stimulsoftReport": "Report Builder",
+          "voucher": "Accounting Voucher"
+        }
+      }
+    },
   "About": {
   "badge": "درباره من",
   "title": "توسعه فرانت‌اند با تمرکز روی مقیاس‌پذیری، تجربه کاربری و کیفیت کد",
@@ -78,7 +101,7 @@
   }
 }
 ,
-    "TechStack": {
+"TechStack": {
   "badge": "تکنولوژی‌ها",
   "title": "تکنولوژی‌ها و ابزارهایی که بیشتر با آن‌ها کار می‌کنم",
   "frontend": {
