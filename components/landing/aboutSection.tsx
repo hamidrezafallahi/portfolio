@@ -11,7 +11,9 @@ export default async function AboutSection(props: { locale: string }) {
   });
 
   return (
-    <section className="section-padding">
+    <section 
+    id="about"
+    className="section-padding">
       <div className="section-container">
         <div className="items-start gap-10 grid lg:grid-cols-[1fr_1.2fr]">
           {/* Left side title */}

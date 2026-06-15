@@ -23,7 +23,6 @@ export default async function ProjectPage({
   if (!project) {
     notFound();
   }
-console.log(project,typeof project.title,t("title"))
   return (
     <main className="w-full">
       <section className="relative overflow-hidden section-padding">

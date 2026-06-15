@@ -19,7 +19,9 @@ export default async function ExperienceTimelineSection(props: {
   });
 
   return (
-    <section className="bg-surface section-padding">
+    <section
+    id="experience"
+    className="bg-surface section-padding">
       <div className="section-container">
         <div className="max-w-2xl">
           <p className="font-medium text-primary-theme text-sm uppercase tracking-wide">

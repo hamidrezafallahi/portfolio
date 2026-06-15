@@ -24,6 +24,7 @@ export default async function HighlightsSection(props: { locale: string }) {
 
   return (
 <section
+id="highlight"
 className="relative overflow-hidden section-padding"
 >
 

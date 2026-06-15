@@ -6,6 +6,7 @@ import {
 } from 'react';
 
 import { useLocale } from 'next-intl';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 import HeaderReveal from '@components/ui/HeaderReveal';
@@ -21,10 +22,12 @@ export default function Header() {
   const [themeIndex, setThemeIndex] = useState(0);
 
   const navItems = [
-    { label: "Projects", href: "#projects" },
-    { label: "Libraries", href: "#opensource" },
-    { label: "Blog", href: "#blog" },
-    { label: "Contact", href: "#contact" },
+    { label: "Projects", href: `/${locale}/projects` },
+    { label: "Libraries", href: `/${locale}/libraries` },
+    { label: "Highlight", href: "#highlight" },
+    { label: "About", href: "#about" },
+    { label: "Experience", href: "#experience" },
+     { label: "Contact", href: "#contact" },
   ];
 
   /* ================= INIT THEME ================= */
@@ -88,35 +91,28 @@ export default function Header() {
         <div className="mx-auto px-6 py-4 container">
           {/* MAIN GLASS BAR */}
 
-          <div
-            className="relative flex justify-between items-center bg-white/5 hover:bg-white/10 dark:bg-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.12)] backdrop-blur-2xl backdrop-saturate-150 p-3 px-5 border border-white/20 dark:border-white/15 rounded-[28px] h-16 transition-all duration-300"
-          >
+          <div className="relative flex justify-between items-center bg-white/5 hover:bg-white/10 dark:bg-white/8 shadow-[0_8px_32px_rgba(0,0,0,0.12)] backdrop-blur-2xl backdrop-saturate-150 p-3 px-5 border border-white/20 dark:border-white/15 rounded-[28px] h-16 transition-all duration-300">
             {/* glass highlight */}
 
-            <div
-              className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent opacity-60 rounded-[28px] pointer-events-none"
-            />
+            <div className="absolute inset-0 bg-linear-to-b from-white/20 to-transparent opacity-60 rounded-[28px] pointer-events-none" />
 
             {/* LOGO */}
 
-            <a
-              href="#"
-              className="relative font-bold text-xl tracking-tight"
-            >
-              HF
-            </a>
+            <Link href={`/${locale}`} className="relative font-bold text-xl tracking-tight">
+              HRF
+            </Link>
 
             {/* DESKTOP NAV */}
 
             <nav className="hidden relative md:flex items-center gap-8">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.href}
                   href={item.href}
                   className="text-zinc-600 hover:text-black dark:hover:text-white dark:text-zinc-300 transition-colors"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
@@ -171,7 +167,7 @@ export default function Header() {
 
 
           bg-white/5
-          dark:bg-white/[0.08]
+          dark:bg-white/8
 
 
           backdrop-blur-2xl
@@ -206,9 +202,7 @@ export default function Header() {
             </a>
           ))}
 
-          <div
-            className="flex items-center gap-3 mt-4 pt-4 border-white/20 border-t"
-          >
+          <div className="flex items-center gap-3 mt-4 pt-4 border-white/20 border-t">
             <button
               onClick={handleNextTheme}
               className="flex-1 hover:bg-white/20 p-3 rounded-2xl transition"
