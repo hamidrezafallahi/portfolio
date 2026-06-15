@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import {
@@ -7,7 +8,7 @@ import {
 
 import Header from '@layout/customHead';
 
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 
 // const myFont = localFont({
 //   src: [
@@ -44,8 +45,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   const messages = await getMessages({ locale });
-  // const cookieStore = await cookies();
-  // const theme = cookieStore.get("theme")?.value || "default";
+ 
 
   return (
     <html
@@ -63,4 +63,58 @@ export default async function LocaleLayout({
       </body>
     </html>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+
+  const { locale } = await params;
+
+ 
+  const isFa = locale === "fa";
+
+  return {
+    title: isFa
+      ? "حمیدرضا فلاحی | توسعه‌دهنده فرانت‌اند"
+      : "Hamidreza Fallahi | Frontend Engineer",
+
+    description: isFa
+      ? "سایت شخصی حمیدرضا فلاحی، متخصص React و Next.js"
+      : "Personal portfolio of a Frontend Engineer specialized in Next.js",
+
+    alternates: {
+      canonical: `https://www.hamidrezafalahi.ir/${locale}`,
+      languages: {
+        fa: "https://www.hamidrezafalahi.ir/fa",
+        en: "https://www.hamidrezafalahi.ir/en",
+      },
+    },
+
+    openGraph: {
+      title: isFa
+        ? "حمیدرضا فلاحی | فرانت‌اند دولوپر"
+        : "Hamidreza Fallahi | Frontend Engineer",
+
+      description: isFa
+        ? "توسعه‌دهنده React و Next.js"
+        : "React & Next.js Developer",
+
+      url: `https://www.hamidrezafalahi.ir/${locale}`,
+      siteName: "Hamidreza Fallahi",
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: isFa
+        ? "حمیدرضا فلاحی"
+        : "Hamidreza Fallahi",
+      description: isFa
+        ? "فرانت‌اند دولوپر"
+        : "Frontend Engineer",
+    },
+  };
 }
