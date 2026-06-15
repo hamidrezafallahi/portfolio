@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 
 import { projects } from '@/contents/projects/data';
@@ -29,6 +30,7 @@ export default async function ProjectsPage({
   }>;
 }) {
   const { locale } = await params;
+  const t = await getTranslations({locale,namespace:"project"});
 
   return (
     <main className="w-full">
@@ -68,13 +70,13 @@ export default async function ProjectsPage({
                     <h2
                       className="font-bold text-theme text-2xl"
                     >
-                      {project.title[locale]}
+                      {t(project.title)}
                     </h2>
 
                     <p
                       className="mt-4 text-muted leading-7"
                     >
-                      {project.description[locale]}
+                      {t(project.description)} 
                     </p>
 
                     <div

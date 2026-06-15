@@ -80,5 +80,57 @@ export const projects: Project[] = [
         alt: "arianErp.media.voucher"
       }
     ]
+  },  {
+    slug: "arian-tech",
+    title: "arianTech.title",
+    description: "arianTech.description",
+    problem: "arianTech.problem",
+    solution: "arianTech.solution",
+    role: "arianTech.role",
+    stack: [
+      "Next",
+      "TypeScript",
+    ],
+
+    media: [
+      {
+        type: "image",
+        src: "/images/arianTech1.png",
+        alt: "arianTech.media.arianTech1"
+      },
+      {
+        type: "image",
+        src: "/images/arianTech.png",
+        alt: "arianTech.media.arianTech"
+      },
+      {
+        type: "video",
+        src: "/videos/arian Tech.mp4",
+        alt: "arianTech.media.arianTech2"
+      },
+    ]
+  },  {
+    slug: "candy-Rose",
+    title: "candyRose.title",
+    description: "candyRose.description",
+    problem: "candyRose.problem",
+    solution: "candyRose.solution",
+    role: "candyRose.role",
+    stack: [
+      "Next",
+      "TypeScript",
+      "Redux-toolkit",
+      "Rtk-Query",
+      "Next-intl",
+    ],
+
+    media: [
+      {
+        type: "image",
+        src: "/images/erpDashboard.png",
+        alt: "arianErp.media.dashboard"
+      }
+      
+    ]
   }
 ];
