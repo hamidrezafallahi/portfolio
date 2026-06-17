@@ -7,7 +7,10 @@ import {
 
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import {
+  usePathname,
+  useRouter,
+} from 'next/navigation';
 
 import HeaderReveal from '@components/ui/HeaderReveal';
 
@@ -20,14 +23,17 @@ export default function Header() {
   const themes = ["default", "dark", "cyberpunk", "aurora"] as const;
 
   const [themeIndex, setThemeIndex] = useState(0);
-
+const pathname = usePathname();
+const isRoot = pathname === `/${locale}` || pathname === '/';
   const navItems = [
     { label: "Projects", href: `/${locale}/projects` },
     { label: "Libraries", href: `/${locale}/libraries` },
+   ...(isRoot ? [
     { label: "Highlight", href: "#highlight" },
     { label: "About", href: "#about" },
     { label: "Experience", href: "#experience" },
-     { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "#contact" },
+  ] : []),
   ];
 
   /* ================= INIT THEME ================= */

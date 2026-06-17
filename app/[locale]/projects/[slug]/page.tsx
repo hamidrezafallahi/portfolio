@@ -62,7 +62,7 @@ theme-card
 rounded-3xl
 "
               >
-                <MediaGallery media={project.media} locale={locale} />
+                <MediaGallery media={project.media}  />
               </div>
             </ScrollReveal>
           )}

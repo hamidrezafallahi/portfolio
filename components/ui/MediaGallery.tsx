@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 import type { MediaItem } from '@/types';
@@ -7,14 +8,12 @@ import type { MediaItem } from '@/types';
 import ScrollReveal from './ScrollReveal';
 
 export default function MediaGallery({
-  media,
-  locale,
-}: {
-  media?: MediaItem[];
-  locale: "fa" | "en";
+  media}: {
+  media?: MediaItem[]
 }) {
+  const t = useTranslations("project")
   if (!media?.length) return null;
-
+console.log(media[0].alt)
   return (
     <section className="mt-16">
       <div
@@ -28,9 +27,10 @@ export default function MediaGallery({
               {item.type === "image" && (
                 <Image
                   src={item.src}
-                  alt={item.alt[locale]}
+                  alt={t(item.alt)}
                   width={1200}
                   height={800}
+                  loading="eager"
                   className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
                 />
               )}

@@ -128,7 +128,7 @@ export const projects: Project[] = [
       {
         type: "image",
         src: "/images/erpDashboard.png",
-        alt: "arianErp.media.dashboard"
+        alt: "candyRose.media.dashboard"
       }
       
     ]
