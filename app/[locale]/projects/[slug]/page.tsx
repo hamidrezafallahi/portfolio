@@ -62,7 +62,7 @@ theme-card
 rounded-3xl
 "
               >
-                <MediaGallery media={project.media}  />
+                <MediaGallery media={project.media} source='project'  />
               </div>
             </ScrollReveal>
           )}

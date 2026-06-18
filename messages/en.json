@@ -89,27 +89,27 @@
     "paragraph3": "If you need a frontend engineer who thinks beyond the UI layer — considering data flow, state architecture and product stability — let's talk."
   },
 
-  "Projects": {
-    "badge": "Featured Projects",
-    "title": "Projects that show how I think and build",
-    "subtitle": "From large-scale ERP systems to SEO-optimized e-commerce platforms — every project reflects decisions around architecture, performance and maintainability.",
-    "erp": {
-      "title": "Enterprise ERP Dashboard",
-      "description": "A complete ERP frontend with complex Master-Detail forms, multi-level access control, dynamic workflows and offline support using IndexedDB. Built for large data volumes and long-term maintainability.",
-      "tags": "Next.js, TypeScript, Redux Toolkit, RTK Query, IndexedDB, Ant Design"
+ "library": {
+  "persianRangePicker": {
+    "name": "Persian Range Picker",
+    "description": "React date range picker supporting Jalali and Gregorian calendars",
+    "usageExample": "Install via npm install persian-range-picker and import directly into your React component.",
+    "features": {
+      "typescript": "Full TypeScript support",
+      "calendar": "Jalali and Gregorian calendar support",
+      "customizable": "Highly customizable via props",
+      "lightweight": "Lightweight with minimal dependencies",
+      "rtl": "RTL layout support"
     },
-    "ecommerce": {
-      "title": "SEO-Driven E-Commerce Platform",
-      "description": "An online store built with server-side rendering for maximum SEO performance, PWA support for offline access and a fast shopping experience connected to ASP.NET Core backend.",
-      "tags": "Next.js, TypeScript, PWA, SSR, SEO"
-    },
-    "designSystem": {
-      "title": "Admin Panel Design System",
-      "description": "A component-based design system for a large management panel using Ant Design and Material UI, focused on consistency, reusability and faster feature development.",
-      "tags": "React, TypeScript, Ant Design, Material UI, Reusable Components"
-    },
-    "viewDetails": "View Project Details"
+    "media": {
+      "preview": "Date range selection preview",
+      "config": "Component configuration view",
+      "demo": "Full library demo"
+    }
   },
+  "badge": "Open Source Libraries",
+  "viewDetails": "View Details"
+},
 
   "Experience": {
     "badge": "Experience",

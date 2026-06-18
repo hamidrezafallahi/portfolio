@@ -8,10 +8,11 @@ import type { MediaItem } from '@/types';
 import ScrollReveal from './ScrollReveal';
 
 export default function MediaGallery({
-  media}: {
+  media,source}: {
   media?: MediaItem[]
+  source:string
 }) {
-  const t = useTranslations("project")
+  const t = useTranslations(source)
   if (!media?.length) return null;
 console.log(media[0].alt)
   return (

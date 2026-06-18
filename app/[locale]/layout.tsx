@@ -90,7 +90,8 @@ export async function generateMetadata({
       languages: {
         fa: "https://www.hamidrezafalahi.ir/fa",
         en: "https://www.hamidrezafalahi.ir/en",
-      },
+        "x-default": "https://www.hamidrezafalahi.ir/fa",
+       },
     },
 
     openGraph: {

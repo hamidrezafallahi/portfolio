@@ -15,13 +15,6 @@
     "subtitle": "سال تجربه حرفه‌ای",
     "description": "توسعه فرانت‌اند برای سیستم‌های production شامل ERP در مقیاس بزرگ و پنل‌های مدیریتی پیچیده"
   },
-
-  "projects": {
-    "title": "10+",
-    "subtitle": "پروژه واقعی",
-    "description": "از سیستم‌های ERP پیچیده تا فروشگاه‌های آنلاین و اپلیکیشن‌های PWA"
-  },
-
   "technical": {
     "title": "100%",
     "subtitle": "تمرکز بر SEO و Performance",
@@ -85,6 +78,27 @@
       "subtitle": "پروژه واقعی",
       "badge": "پروژه‌های منتخب"
     },
+  "library": {
+  "persianRangePicker": {
+    "name": "Persian Range Picker",
+    "description": "کامپوننت انتخاب بازه تاریخ شمسی و میلادی برای React",
+    "usageExample": "با دستور npm install persian-range-picker نصب کرده و مستقیماً در کامپوننت React خود استفاده کنید.",
+    "features": {
+      "typescript": "پشتیبانی کامل از TypeScript",
+      "calendar": "پشتیبانی از تقویم شمسی و میلادی",
+      "customizable": "قابل شخصی‌سازی کامل از طریق props",
+      "lightweight": "سبک با حداقل وابستگی",
+      "rtl": "پشتیبانی از چیدمان RTL"
+    },
+    "media": {
+      "preview": "نمایش انتخاب بازه تاریخ",
+      "config": "نمایش تنظیمات کامپوننت",
+      "demo": "دموی کامل کتابخانه"
+    }
+  },
+  "badge": "کتابخانه‌های متن‌باز",
+  "viewDetails": "مشاهده جزئیات"
+},
   "About": {
   "badge": "درباره من",
   "title": "توسعه فرانت‌اند با تمرکز روی مقیاس‌پذیری، تجربه کاربری و کیفیت کد",
