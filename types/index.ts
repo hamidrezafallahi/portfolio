@@ -26,6 +26,11 @@ export type Project = {
   };
   media?: MediaItem[];
 };
+export type Highlight = {
+title:string
+subtitle:string
+description:string
+};
 
 
 

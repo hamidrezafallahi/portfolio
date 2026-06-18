@@ -63,7 +63,7 @@ export default async function HeroSection(props: { locale: string }) {
               </Link>
 
               <Link
-                href="/documents/hamidreza-fallahi-resume-1405-01.pdf"
+                href="/documents/hamidrezafalahi.pdf"
                 target="_blank"
                 className="flex justify-center items-center gap-2 col-span-2 sm:col-span-1 hover:bg-primary-theme px-8 py-3.5 hover:text-white text-base theme-button-secondary"
               >

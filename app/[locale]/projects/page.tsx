@@ -57,7 +57,9 @@ export default async function ProjectsPage({
           <div
             className="gap-6 grid md:grid-cols-2"
           >
-            {projects.map((project, index) => (
+            {projects.map((project, index) => {
+              console.log(project)
+              return (
               <ScrollReveal
                 key={project.slug}
                 delay={index * 0.12}
@@ -94,7 +96,8 @@ export default async function ProjectsPage({
                   </article>
                 </Link>
               </ScrollReveal>
-            ))}
+            )
+            })}
           </div>
         </div>
       </section>

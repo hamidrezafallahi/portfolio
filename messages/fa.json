@@ -14,12 +14,14 @@
     "title": "5+",
     "subtitle": "سال تجربه حرفه‌ای",
     "description": "توسعه فرانت‌اند برای سیستم‌های production شامل ERP در مقیاس بزرگ و پنل‌های مدیریتی پیچیده"
-    
   },
-   "projects": {
-      "title": "10+",
-      "subtitle": "پروژه واقعی",
-      "description": "از سیستم‌های ERP پیچیده تا فروشگاه‌های آنلاین و اپلیکیشن‌های PWA"},
+
+  "projects": {
+    "title": "10+",
+    "subtitle": "پروژه واقعی",
+    "description": "از سیستم‌های ERP پیچیده تا فروشگاه‌های آنلاین و اپلیکیشن‌های PWA"
+  },
+
   "technical": {
     "title": "100%",
     "subtitle": "تمرکز بر SEO و Performance",
@@ -46,7 +48,8 @@
           "stimulsoftReport": "Report Builder",
           "voucher": "Accounting Voucher"
         }
-      },"arianTech": {
+      },
+      "arianTech": {
         "title": "Arian tech public site",
         "description": "برای تبلیغ وب اپلیکیشن بزرگ ERP ساخته شده بدون کتابخانه و سبک و pure.",
         "problem": "پیاده سازی تمامی اکشن ها بدون نصب کتابخانه ای برای افزایش سرعت سایت ",
@@ -56,7 +59,8 @@
           "Hero": "Arian tech Hero "
 
         }
-      },"candyRose": {
+      },
+      "candyRose": {
         "title": "CandyRose Full-stack E-commerce Platform",
         "description": "یک فروشگاه ساده با نیاز های اولیه پیاده شده و تمامی فیلد های مورد نیاز رو دارا میباشد با این تفاوت که قابل توسعه و مقیاس پذیر است",
         "problem": "تبدیل فروشگاه به یک work place  که هر فروشنده ای قادر به بار گذاری محصولی با قیمت خاص خودش باشد و تعداد خودش . همچنین پیاده سازی promotion و کد تخفیف و ... ",
@@ -75,7 +79,11 @@
           "stimulsoftReport": "Report Builder",
           "voucher": "Accounting Voucher"
         }
-      }
+      },
+      "viewDetails": "مشاهده جزئیات پروژه",
+       "title": "10+",
+      "subtitle": "پروژه واقعی",
+      "badge": "پروژه‌های منتخب"
     },
   "About": {
   "badge": "درباره من",

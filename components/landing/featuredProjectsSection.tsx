@@ -1,14 +1,9 @@
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 
+import { projects } from '@/contents/projects/data';
 import { ProjectCardMotion } from '@components/ui/ProjectCardMotion';
 import StaggerContainer from '@components/ui/StaggerContainer';
-
-const projects = [
-  { key: "erp" },
-  { key: "ecommerce" },
-  { key: "designSystem" },
-];
 
 export default async function FeaturedProjectsSection(props: {
   locale: string;
@@ -17,7 +12,7 @@ export default async function FeaturedProjectsSection(props: {
 
   const t = await getTranslations({
     locale,
-    namespace: "Projects",
+    namespace: "project",
   });
 
   return (
@@ -41,31 +36,31 @@ export default async function FeaturedProjectsSection(props: {
         {/* Grid */}
         <StaggerContainer>
           <div className="gap-6 grid lg:grid-cols-3 mt-12">
-            {projects.map((project) => (
-              <ProjectCardMotion key={project.key}>
-                <article
-                  className="group flex flex-col hover:shadow-xl p-8 rounded-3xl h-full transition hover:-translate-y-1 theme-card"
-                >
+            {projects.map((project, index) => {
+              console.log(project)
+              return (
+              <ProjectCardMotion key={index}>
+                <article className="group flex flex-col hover:shadow-xl p-8 rounded-3xl h-full transition hover:-translate-y-1 theme-card">
                   <h3 className="font-bold text-theme text-xl">
-                    {t(`${project.key}.title`)}
+                   {t(project.title)}
                   </h3>
 
                   <p className="flex-1 mt-4 text-muted text-sm leading-7">
-                    {t(`${project.key}.description`)}
+                    {t(project.description)}
                   </p>
 
                   <div className="flex flex-wrap gap-2 mt-6">
-                    {t(`${project.key}.tags`)
-                      .split(",")
-                      .map((tag: string) => (
-                        <span key={tag} className="text-xs theme-badge">
-                          {tag.trim()}
-                        </span>
-                      ))}
+                    {project.stack.map((tag: string) => (
+                      <span
+                        key={tag}
+                        className="px-4 py-2 border rounded-full text-primary-theme"
+                      >
+                        {tag}
+                      </span>
+                    ))}
                   </div>
-
                   <Link
-                    href="#"
+                    href={`${locale}/projects/${project.slug}`}
                     className="inline-flex items-center gap-2 mt-8 font-medium text-primary-theme text-sm transition group-hover:translate-x-1"
                   >
                     {t("viewDetails")}
@@ -73,7 +68,7 @@ export default async function FeaturedProjectsSection(props: {
                   </Link>
                 </article>
               </ProjectCardMotion>
-            ))}
+            )})}
           </div>
         </StaggerContainer>
       </div>
