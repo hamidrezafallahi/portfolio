@@ -57,7 +57,10 @@
       "solution": "Using vanilla JavaScript to implement different sections and custom functionality.",
       "role": "Lead Developer responsible for implementing server-side sections of the system.",
       "media": {
-        "Hero": "Arian Tech Hero"
+        "Hero": "Arian Tech Hero",
+          "landing":"landing page picture",
+          "storyBook":"implementing a storybook component in it",
+          "mobile":"show landing page as mobile device"
       }
     },
 
