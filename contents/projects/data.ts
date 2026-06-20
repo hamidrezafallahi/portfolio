@@ -141,6 +141,10 @@ export const projects: Project[] = [
         type: "video",
         src: "/videos/onlineShopRegister.mp4",
         alt: "candyRose.media.dashboard"
+      }, {
+        type: "video",
+        src: "/videos/onlineShop new design.mp4",
+        alt: "candyRose.media.dashboard"
       }
       
     ]
