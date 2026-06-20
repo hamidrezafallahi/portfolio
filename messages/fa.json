@@ -15,6 +15,10 @@
     "subtitle": "سال تجربه حرفه‌ای",
     "description": "توسعه فرانت‌اند برای سیستم‌های production شامل ERP در مقیاس بزرگ و پنل‌های مدیریتی پیچیده"
   },
+   "projects": {
+      "title": "10+",
+      "subtitle": "پروژه واقعی",
+      "description": "از سیستم‌های ERP پیچیده تا فروشگاه‌های آنلاین و اپلیکیشن‌های PWA"},
   "technical": {
     "title": "100%",
     "subtitle": "تمرکز بر SEO و Performance",
@@ -49,7 +53,11 @@
         "solution": "کار با جاوا اسکریپت vanilla برای پیاده سازی هر قسمت ",
         "role": "Lead Developer مسئول پیاده سازی قسمت های سرور ساید  سیستم.",
         "media": {
-          "Hero": "Arian tech Hero "
+          "Hero": "Arian tech Hero ",
+           "landing":"تصویر صفحه اصلی سایت",
+           "storyBook":"تصویر خدمات ما در سایت",
+           "mobile":"نمایش صفحه اصلی سایت در قالب موبایل"
+
 
         }
       },

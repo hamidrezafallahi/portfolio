@@ -70,35 +70,6 @@ export default async function HeroSection(props: { locale: string }) {
                 {t("ctaResume")}
               </Link>
             </div>
-
-            <div className="flex flex-wrap justify-center lg:justify-start items-center gap-x-8 gap-y-3 mt-10 text-muted text-sm">
-              <a
-                href="https://github.com/hamidrezafallahi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-highlight-theme transition theme-link"
-              >
-                GitHub
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/hamidreza-falahi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-highlight-theme transition theme-link"
-              >
-                LinkedIn
-              </a>
-
-              <a
-                href="https://t.me/hamidrezafalahi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-highlight-theme transition theme-link"
-              >
-                Telegram
-              </a>
-            </div>
           </div>
         </MotionWrapper>
 

@@ -96,17 +96,17 @@ export const projects: Project[] = [
       {
         type: "image",
         src: "/images/arianTech1.png",
-        alt: "arianTech.media.arianTech1"
+        alt: "arianTech.media.landing"
       },
       {
         type: "image",
         src: "/images/arianTech.png",
-        alt: "arianTech.media.arianTech"
+        alt: "arianTech.media.storyBook"
       },
       {
         type: "video",
         src: "/videos/arian Tech.mp4",
-        alt: "arianTech.media.arianTech2"
+        alt: "arianTech.media.mobile"
       },
     ]
   },  {
