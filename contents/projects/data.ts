@@ -127,7 +127,19 @@ export const projects: Project[] = [
     media: [
       {
         type: "image",
-        src: "/images/erpDashboard.png",
+        src: "/images/onlineShop products.png",
+        alt: "candyRose.media.dashboard"
+      }, {
+        type: "video",
+        src: "/videos/onlineShop.mp4",
+        alt: "candyRose.media.dashboard"
+      }, {
+        type: "video",
+        src: "/videos/onlineShopAdmin.mp4",
+        alt: "candyRose.media.dashboard"
+      }, {
+        type: "video",
+        src: "/videos/onlineShopRegister.mp4",
         alt: "candyRose.media.dashboard"
       }
       
