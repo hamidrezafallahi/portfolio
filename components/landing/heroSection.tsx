@@ -83,12 +83,12 @@ export default async function HeroSection(props: { locale: string }) {
 
             <div className="shadow-xl backdrop-blur-xl p-4 border border-primary-theme/15 rounded-3xl theme-card">
               <Image
-                src="/images/perfect tail.png"
+                src="/images/perfectTail.webp"
                 alt={t("imageAlt")}
-                width={420}
-                height={420}
+                width={400}
+                height={600}
                 priority
-                className="rounded-2xl w-65 sm:w-[320px] lg:w-95 h-auto object-cover"
+                className="rounded-2xl w-100 h-150 object-cover"
               />
             </div>
           </div>
