@@ -7,7 +7,7 @@ import {
   Project,
 } from '@/types';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? 'https://www.hamidrezafalahi.ir';
 
 type ChangeFreq = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
 
@@ -38,12 +38,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const libraryEntries = libraries.map((p:Library) =>
     buildEntry(`libraries/${p.slug}`, 0.7, 'monthly')
   );
-
+console.log('BASE_URL:', process.env.NEXT_PUBLIC_BASE_URL);
   return [
     buildEntry('', 1.0, 'monthly'),
     buildEntry('projects', 0.9, 'weekly'),
     buildEntry('libraries', 0.9, 'weekly'),
     ...projectEntries,
+    ...libraryEntries
     // وقتی دیتای libraries رو هم داشتی همینطوری اضافه کن:
     // ...libraries.map((l) => buildEntry(`libraries/${l.slug}`, 0.7, 'monthly')),
   ];
