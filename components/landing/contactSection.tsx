@@ -62,6 +62,26 @@ export default async function ContactSection(props: { locale: string }) {
                 >
                   {t("linkedin")}
                 </Link>
+
+                <Link
+                  href="https://github.com/hamidrezafalahi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Hamidreza Falahi on GitHub"
+                  className="px-8 py-3.5 w-full sm:w-auto text-base transition hover:-translate-y-0.5 theme-button-secondary"
+                >
+                  {t("github")}
+                </Link>
+
+                <Link
+                  href="https://www.npmjs.com/~hamidrezafalahi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Hamidreza Falahi on npm"
+                  className="px-8 py-3.5 w-full sm:w-auto text-base transition hover:-translate-y-0.5 theme-button-secondary"
+                >
+                  {t("npm")}
+                </Link>
               </div>
             </div>
           </div>
