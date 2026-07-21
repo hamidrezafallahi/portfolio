@@ -183,6 +183,8 @@
     "description": "Available for projects involving complex management panels, ERP systems, data-driven dashboards and frontend performance optimization. Experienced with React, Next.js and scalable state architectures.",
     "email": "Send Email",
     "telegram": "Message on Telegram",
-    "linkedin": "Connect on LinkedIn"
+    "linkedin": "Connect on LinkedIn",
+    "github":"github",
+    "npm":"npm"
   }
 }

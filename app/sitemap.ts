@@ -2,10 +2,6 @@ import type { MetadataRoute } from 'next';
 
 import { libraries } from '@/contents/libraries/data';
 import { projects } from '@/contents/projects/data';
-import {
-  Library,
-  Project,
-} from '@/types';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? 'https://www.hamidrezafalahi.ir';
 
@@ -30,22 +26,28 @@ function buildEntry(
     },
   };
 }
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  const projectEntries = projects.map((p:Project) =>
-    buildEntry(`projects/${p.slug}`, 0.7, 'monthly')
-  );
-  const libraryEntries = libraries.map((p:Library) =>
-    buildEntry(`libraries/${p.slug}`, 0.7, 'monthly')
-  );
-console.log('BASE_URL:', process.env.NEXT_PUBLIC_BASE_URL);
+function buildLocalizedEntries(
+  path: string,
+  priority: number,
+  changeFrequency: ChangeFreq
+): MetadataRoute.Sitemap {
   return [
-    buildEntry('', 1.0, 'monthly'),
-    buildEntry('projects', 0.9, 'weekly'),
-    buildEntry('libraries', 0.9, 'weekly'),
-    ...projectEntries,
-    ...libraryEntries
-    // وقتی دیتای libraries رو هم داشتی همینطوری اضافه کن:
-    // ...libraries.map((l) => buildEntry(`libraries/${l.slug}`, 0.7, 'monthly')),
+    buildEntry(`fa/${path}`, priority, changeFrequency),
+    buildEntry(`en/${path}`, priority, changeFrequency),
+  ];
+}
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [
+    ...buildLocalizedEntries('', 1.0, 'monthly'),
+    ...buildLocalizedEntries('projects', 0.9, 'weekly'),
+    ...buildLocalizedEntries('libraries', 0.9, 'weekly'),
+
+    ...projects.flatMap((p) =>
+      buildLocalizedEntries(`projects/${p.slug}`, 0.7, 'monthly')
+    ),
+
+    ...libraries.flatMap((l) =>
+      buildLocalizedEntries(`libraries/${l.slug}`, 0.7, 'monthly')
+    ),
   ];
 }

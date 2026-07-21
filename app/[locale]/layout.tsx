@@ -45,6 +45,33 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   const messages = await getMessages({ locale });
+  const personSchema = {
+    "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Hamidreza Fallahi",
+  alternateName: "حمیدرضا فلاحی",
+  url: "https://www.hamidrezafalahi.ir",
+  image: "https://www.hamidrezafalahi.ir/images/perfectTail.webp",
+  jobTitle: "Frontend Engineer",
+  knowsAbout: [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Redux",
+    "Tailwind CSS"
+  ],
+  description:
+    locale === "fa"
+      ? "توسعه‌دهنده فرانت‌اند متخصص React و Next.js"
+      : "Frontend Engineer specialized in React and Next.js",
+  "email":"mailto:hamidreza.lipar@gmail.com",
+  "sameAs": [
+   "https://github.com/hamidrezafallahi",
+   "https://ir.linkedin.com/in/hamidreza-falahi",
+   "https://www.hamidrezafalahi.ir/documents/hamidrezafalahi.pdf"
+]
+};
  
 
   return (
@@ -56,8 +83,15 @@ export default async function LocaleLayout({
       // data-theme={theme}
     >
       <body className="min-h-screen">
-        <NextIntlClientProvider locale={locale} messages={messages}>
+         <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(personSchema),
+    }}
+  />
+         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
+
           {children}
         </NextIntlClientProvider>
       </body>
